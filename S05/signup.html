@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Signup Page</title>
+  </head>
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(-45deg, #43cea2, #185a9d, #43cea2, #185a9d);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      font-family: Arial, sans-serif;
+    "
+  >
+    <div
+      style="
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 40px;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        width: 320px;
+        animation: fadeIn 1.5s ease;
+        color: #fff;
+      "
+    >
+      <h2 style="text-align: center; margin-bottom: 30px">Sign Up</h2>
+      <form>
+        <input
+          type="text"
+          placeholder="Username"
+          style="
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            transition: all 0.3s;
+          "
+          onfocus="this.style.boxShadow='0 0 8px #43cea2';"
+          onblur="this.style.boxShadow='none';"
+          required
+        />
+
+        <input
+          type="email"
+          placeholder="Email"
+          style="
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            transition: all 0.3s;
+          "
+          onfocus="this.style.boxShadow='0 0 8px #43cea2';"
+          onblur="this.style.boxShadow='none';"
+          required
+        />
+
+        <input
+          type="password"
+          placeholder="Password"
+          style="
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            transition: all 0.3s;
+          "
+          onfocus="this.style.boxShadow='0 0 8px #43cea2';"
+          onblur="this.style.boxShadow='none';"
+          required
+        />
+
+        <select
+          style="
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            transition: all 0.3s;
+            background: #fff;
+            color: #333;
+          "
+          onfocus="this.style.boxShadow='0 0 8px #43cea2';"
+          onblur="this.style.boxShadow='none';"
+          required
+        >
+          <option value="" disabled selected>Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <button
+          type="submit"
+          style="
+            width: 100%;
+            padding: 12px;
+            background: #43cea2;
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+          "
+          onmouseover="this.style.background='#2bc0a3'; this.style.transform='scale(1.03)';"
+          onmouseout="this.style.background='#43cea2'; this.style.transform='scale(1)';"
+        >
+          Create Account
+        </button>
+        <a href="signin.html">Have a Account ?</a>
+      </form>
+    </div>
+
+    <style>
+      @keyframes gradientBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </body>
+</html>
