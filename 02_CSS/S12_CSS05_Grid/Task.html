@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .nav {
+        background-color: black;
+        height: 80px;
+      }
+      .container {
+        width: 1100px;
+        height: 400px;
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+      }
+      .container div {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .div1 {
+        background-image: url("https://purityhempco.com/wp-content/uploads/2023/02/6000mg-hemp-10ml.jpg");
+
+        grid-column: 1 / 3;
+        grid-row: 1 /4;
+      }
+      .div2 {
+        background-image: url("https://s-media-cache-ak0.pinimg.com/originals/27/ce/f0/27cef01bb902b819b26a2700a918b2dc.jpg");
+        grid-column: 3/4;
+        grid-row: 3/4;
+      }
+      .div3 {
+        background-image: url("https://tse2.mm.bing.net/th/id/OIP.15Rh7RuBhVcrFUHPe05eaQAAAA?rs=1&pid=ImgDetMain&o=7&rm=3");
+      }
+      .div4 {
+        background-color: lightblue;
+        background-image: url("https://dooplinks.com/wp-content/uploads/2024/02/photo_2024-02-19_13-22-57.jpg");
+        grid-column: 3/4;
+        grid-row: 1/2;
+      }
+      .shadow {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      .div1 h1 {
+        color: white;
+        margin: 0;
+        font-size: 52px;
+      }
+      .div1 p {
+        color: white;
+        text-align: center;
+        font-size: 17px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="nav"></div>
+
+    <section style="height: 400px; width: 1100px; margin: 30px auto">
+      <img
+        src="https://plus.unsplash.com/premium_photo-1661769750859-64b5f1539aa8?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZHVjdCUyMGltYWdlfGVufDB8fDB8fHww"
+        alt=""
+        width="100%"
+        height="400"
+      />
+    </section>
+
+    <div class="container">
+      <div class="div1">
+        <div class="shadow">
+          <h1>Trending Oil</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit illo nesciunt laborum, architecto dolorem
+            necessitatibus earum sunt voluptas? Voluptatem possimus incidunt
+            quasi voluptate odio numquam assumenda est distinctio reiciendis
+            laboriosam alias dolorem, illo eos hic, sequi veritatis quam
+            dignissimos ipsam a aliquam odit debitis. Suscipit sed eos
+            voluptatibus autem ab.
+          </p>
+        </div>
+      </div>
+
+      <div class="div2">
+        <div class="shadow"></div>
+      </div>
+
+      <div class="div3">
+        <div class="shadow"></div>
+      </div>
+
+      <div class="div4">
+        <div class="shadow"></div>
+      </div>
+    </div>
+  </body>
+</html>
