@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+  font-weight: bold;
+}
+.nav {
+  background-color: black;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.brandName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brandName h1 {
+  font-size: 37px;
+  color: cornsilk;
+}
+.menus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menus a {
+  color: white;
+  text-decoration: none;
+  margin-right: 50px;
+  font-size: 17px;
+}
+.menus button {
+  padding: 10px 30px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 170px;
+}
+.productAd {
+  width: 1200px;
+  height: 400px;
+  box-shadow: 0 0 10px black;
+  margin: 30px auto;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(155, 0, 0, 0.8)),
+    url("https://thumbs.dreamstime.com/z/top-view-coffee-mobile-phone-wooden-background-blank-text-69868882.jpg?w=768");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productAd h1 {
+  font-size: 57px;
+  color: cornsilk;
+}
+.productAd p {
+  width: 80%;
+  font-size: 17px;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}

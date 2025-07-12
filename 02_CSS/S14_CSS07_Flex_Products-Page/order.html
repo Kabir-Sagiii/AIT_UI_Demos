@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        width: 800px;
+        height: 500px;
+        box-shadow: 0 0 10px red;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: row;
+      }
+      .container div {
+        height: 100px;
+        width: 100px;
+      }
+      .div1 {
+        background-color: lightcoral;
+        order: 2;
+      }
+      .div2 {
+        background-color: lightgreen;
+        order: 3;
+      }
+      .div3 {
+        background-color: lightgrey;
+        order: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="div1">1</div>
+      <div class="div2">2</div>
+      <div class="div3">3</div>
+    </div>
+  </body>
+</html>
