@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+  font-weight: bold;
+}
+.nav {
+  background-color: black;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+}
+.brandName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brandName h1 {
+  font-size: 37px;
+  color: cornsilk;
+}
+.menus,
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menus a {
+  color: white;
+  text-decoration: none;
+  margin-right: 50px;
+  font-size: 17px;
+}
+.icons button {
+  padding: 10px 30px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 30px;
+}
+
+.icons i {
+  color: white;
+  font-size: 21px;
+  font-weight: bold;
+  margin-left: 15px;
+}

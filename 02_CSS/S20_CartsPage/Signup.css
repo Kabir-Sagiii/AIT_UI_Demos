@@ -1,0 +1,110 @@
+/* Reset and body */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+  font-weight: bold;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.signup-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo img {
+  width: 70px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* Inputs */
+form input[type="email"],
+form input[type="password"],
+form input[type="text"] {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border 0.2s;
+}
+
+form input:focus {
+  border-color: #0095f6;
+  outline: none;
+}
+
+/* Gender */
+.gender-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+.gender-label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 6px;
+  display: block;
+}
+.gender-options label {
+  margin-right: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Button */
+button {
+  width: 100%;
+  background-color: #0095f6;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #007ace;
+}
+
+/* Bottom Link */
+.login-link {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-top: 20px;
+}
+.login-link a {
+  color: #0095f6;
+  text-decoration: none;
+}
+.login-link a:hover {
+  text-decoration: underline;
+}

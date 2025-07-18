@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+  font-weight: bold;
+}
+.nav {
+  background-color: black;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+}
+.brandName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brandName h1 {
+  font-size: 37px;
+  color: cornsilk;
+}
+.menus,
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menus a {
+  color: white;
+  text-decoration: none;
+  margin-right: 50px;
+  font-size: 17px;
+}
+.icons button {
+  padding: 10px 30px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 30px;
+}
+
+.icons i {
+  color: white;
+  font-size: 21px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.product-details {
+  width: 1150px;
+  margin: 30px auto;
+  height: 450px;
+  /* box-shadow: 0 0 10px green; */
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 20px;
+}
+.product-details dt {
+  color: green;
+}
+.product-details dd {
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+.pd-buttons {
+  margin-top: 40px;
+}
+.pd-buttons button {
+  padding: 7px 20px;
+  margin-right: 30px;
+  background: none;
+  color: white;
+}
+
+.product-images {
+  box-shadow: 0 0 10px black;
+  height: 130px;
+}
+
+.footer {
+  background-color: #111827;
+  color: #ccc;
+  padding: 60px 20px 30px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-box h3 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.footer-box p,
+.footer-box li,
+.footer-box a {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.8;
+  text-decoration: none;
+}
+
+.footer-box ul {
+  list-style: none;
+}
+
+.footer-box a:hover {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.footer-box.about .logo {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer-box.contact p i {
+  margin-right: 10px;
+  color: #00bcd4;
+}
+
+.social-icons a {
+  color: #ccc;
+  margin-right: 12px;
+  font-size: 16px;
+  display: inline-block;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  color: #00bcd4;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #2e3742;
+  margin-top: 40px;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #999;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer-box.about,
+  .footer-box.links,
+  .footer-box.contact,
+  .footer-box.social {
+    margin-bottom: 30px;
+  }
+
+  .social-icons a {
+    margin: 0 8px;
+  }
+}
