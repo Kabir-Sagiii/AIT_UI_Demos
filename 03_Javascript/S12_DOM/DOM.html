@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Doccument Object Model</title>
+    <script>
+      function getDomElement() {
+        // Accessing the DOM element using querySelector
+        var h1_DomElement = document.querySelector("h1");
+        var p_DomElement = document.querySelector("p");
+        var button_DomElement = document.querySelector("button");
+
+        //Modifying the innerText of the h1 element
+        h1_DomElement.innerText = "DOM Modified";
+        p_DomElement.innerText =
+          "This is a modified paragraph text to demonstrate DOM manipulation.";
+        button_DomElement.innerText = "Majha Aagya";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Document Object Model</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias fugiat
+        aliquam ea saepe facere sed harum tempora eligendi veritatis
+        necessitatibus quas est sit, vitae quam doloremque labore. Consequuntur
+        modi doloribus delectus odit, voluptatibus quam sed illo corrupti ipsam
+        dicta porro veritatis error minus hic totam dolor vero enim ea! Quidem
+        corrupti debitis corporis facilis impedit sed ab ratione dolorem
+        perspiciatis ducimus. A pariatur modi ullam, esse ab alias provident
+        recusandae, veritatis dicta culpa mollitia, reiciendis ratione dolore
+        assumenda repudiandae ducimus aspernatur dolor? Esse ab corrupti facere.
+        Sed harum natus optio debitis alias, placeat obcaecati beatae ullam fuga
+        vero enim. Minus.
+      </p>
+      <button onclick="getDomElement()">Explore DOM</button>
+    </div>
+  </body>
+</html>

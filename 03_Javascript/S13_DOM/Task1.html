@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function changeColor() {
+        // var hDomElement = document.querySelector("h2");
+        // var h2DomArray = document.querySelectorAll("h2");
+        // var h2DomArray = document.getElementsByTagName("h2");
+        var DomElementsArray = document.getElementsByClassName("heading");
+        var para = DomElementsArray[3];
+        para.style.color = "coral";
+
+        DomElementsArray[1].style.color = "red";
+
+        // var pDomElement = document.getElementById("para");
+
+        // var h2DomElement = h2DomArray[1];
+
+        // h2DomElement.innerText = "DOM Manipulated";
+        // h2DomElement.style.color = "red";
+        // h2DomElement.style.backgroundColor = "black";
+        // h2DomElement.style.padding = "20px";
+
+        // pDomElement.style.color = "blue";
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2 class="heading">h2-1</h2>
+    <h2 class="heading">h2-2</h2>
+    <h2 class="heading">h2-3</h2>
+    <p id="para" class="heading">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui nesciunt
+      cumque sapiente velit vero architecto! Dolore ratione aut nihil sunt
+      quibusdam magni voluptatibus unde aliquid commodi eligendi voluptatum
+      velit modi nostrum, qui ex adipisci? Dignissimos doloremque laboriosam
+      corporis voluptatibus ea et vero pariatur minima excepturi officiis
+      impedit, officia numquam expedita, magni soluta vel ipsam illum eum quia
+      ipsa. Animi dolorem exercitationem, corporis alias fuga illo reiciendis
+      tenetur ex rerum deleniti odio doloribus! Modi dignissimos accusamus
+      suscipit deleniti temporibus earum? Ab, mollitia iste doloremque ut autem
+      officiis labore optio quas aliquam asperiores exercitationem facere? Earum
+      magni sint ex voluptas placeat non.
+    </p>
+    <button onclick="changeColor()">change Color</button>
+  </body>
+</html>

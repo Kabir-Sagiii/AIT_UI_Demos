@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function removeH1() {
+        var h1 = document.querySelector("h1");
+        h1.remove();
+        // Alternatively, you can use the following line to remove all <p> elements
+        document.querySelector("p").remove();
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Task 1</h1>
+    <p>This is the content of Task 1.</p>
+    <p>Here you can add more details about the task.</p>
+
+    <input type="radio" onchange="removeH1()" />
+    <label>Remove h1</label>
+  </body>
+</html>

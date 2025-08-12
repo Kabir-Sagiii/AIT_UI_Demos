@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function task() {
+        var inputDomElement = document.querySelector("input");
+        var btn = document.querySelector("#bt");
+        inputDomElement.type = "text";
+        btn.textContent = "Hide Password";
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>Task 2</h2>
+    <input type="password" placeholder="Enter your password" />
+    <button id="bt" onclick="task()">Show Password</button>
+  </body>
+</html>
