@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function createDOMElement() {
+        var h3DomElement = document.createElement("h3");
+        h3DomElement.textContent = "I am new Dom Element";
+
+        var img = document.createElement("img");
+        img.width = "100";
+        img.height = "100";
+        img.src =
+          "https://techcloudltd.com/wp-content/uploads/2024/06/male-professional-headshots-1024x638.webp";
+
+        var bodyDomElement = document.querySelector("body");
+        bodyDomElement.appendChild(h3DomElement);
+        bodyDomElement.appendChild(img);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Create DOM Element</h1>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
+      necessitatibus optio sint laudantium, enim totam iste ipsum quibusdam. In,
+      incidunt dignissimos quos architecto repellendus ad temporibus, iusto
+      atque fuga, natus maiores quibusdam dolorum? Tenetur assumenda, ipsum
+      aliquam necessitatibus non quos iure odio cumque sapiente qui corporis
+      inventore laboriosam perferendis consequuntur, provident eveniet nulla
+      possimus quae beatae cupiditate esse quidem. Accusantium, voluptates
+      repudiandae nam praesentium nisi autem aliquam tenetur distinctio modi
+      dignissimos at aliquid sit impedit. Magni, excepturi laborum perferendis
+      enim corrupti reiciendis dolorem, ad dolores, eos quis quae itaque quas
+      porro animi saepe? In, totam velit neque ea beatae corrupti!
+    </p>
+    <button onclick="createDOMElement()">Create DOM Element</button><br /><br />
+  </body>
+</html>
