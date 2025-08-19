@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+
+  <body>
+    <script>
+      function createUI() {
+        var buttonDomElement = document.createElement("button");
+        buttonDomElement.innerText = "Javascript Button";
+
+        buttonDomElement.onclick = function () {
+          var p = document.createElement("p");
+          p.innerText = "I am Para";
+          document.querySelector("body").appendChild(p);
+        };
+        document.querySelector("body").appendChild(buttonDomElement);
+
+        var ol = document.createElement("ol");
+        var li1 = document.createElement("li");
+        var li2 = document.createElement("li");
+
+        li1.innerText = "HTML";
+        li2.innerText = "CSS";
+
+        ol.appendChild(li1);
+        ol.appendChild(li2);
+
+        document.querySelector("body").appendChild(ol);
+      }
+      createUI();
+      createUI();
+      createUI();
+      createUI();
+      createUI();
+    </script>
+  </body>
+</html>
