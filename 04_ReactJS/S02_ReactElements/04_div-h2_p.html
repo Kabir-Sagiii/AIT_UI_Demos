@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #subContainer {
+        background-color: black;
+        color: white;
+        padding: 50px;
+        width: 500px;
+        margin: 30px auto;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script>
+      var div = React.createElement("div", { id: "subContainer" }, [
+        React.createElement("h2", null, "React JS"),
+        React.createElement("p", null, "React is looking Comfortable Now"),
+      ]);
+
+      ReactDOM.render(div, document.getElementById("root"));
+    </script>
+  </body>
+</html>
