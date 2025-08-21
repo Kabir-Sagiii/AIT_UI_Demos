@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #container {
+        background-color: rgb(135, 7, 7);
+        color: white;
+        padding: 50px;
+        width: 800px;
+        margin: 30px auto;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function createUI(title) {
+        var nestedElements = (
+          <div id="container">
+            <h2> {title} </h2>
+          </div>
+        );
+
+        return nestedElements;
+      }
+
+      function app() {
+        return (
+          <div>
+            {createUI("React JS")}
+            {createUI("Node JS")}
+            {createUI("Mongo DB")}
+          </div>
+        );
+      }
+
+      ReactDOM.render(app(), document.getElementById("root"));
+    </script>
+  </body>
+</html>
