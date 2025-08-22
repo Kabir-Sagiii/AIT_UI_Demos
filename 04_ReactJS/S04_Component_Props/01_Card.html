@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function Card(parameter) {
+        //parameter = {title:"",image:""}
+
+        var cardStyle = {
+          width: "270px",
+          padding: "10px",
+          boxShadow: "0 0 10px black",
+          textAlign: "center",
+          backgroundColor: "black",
+          color: "white",
+        };
+
+        return (
+          <div style={cardStyle}>
+            <img src={parameter.image} alt="" width="100%" height="230" />
+            <h3 style={{ color: "yellow" }}> {parameter.title} </h3>
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+            <Card
+              title={"Rohan Verma"}
+              image={
+                "https://www.crushpixel.com/big-static7/preview4/portrait-young-professional-man-suit-258742.jpg"
+              }
+            />
+
+            <Card
+              title={"Sid Sharma"}
+              image={
+                "https://static.vecteezy.com/system/resources/thumbnails/029/306/038/small_2x/ai-generative-happy-businessman-standing-with-arms-crossed-isolated-on-white-background-free-photo.jpg"
+              }
+            ></Card>
+
+            <Card
+              title={"Riya Jaiswal"}
+              image={
+                "https://static.vecteezy.com/system/resources/previews/025/474/309/non_2x/portrait-of-a-professional-woman-in-a-suit-business-woman-standing-in-an-office-ai-generated-photo.jpg"
+              }
+            />
+
+            <Card
+              title={"Priya Singh"}
+              image={
+                "https://static.vecteezy.com/system/resources/previews/038/974/578/non_2x/ai-generated-professional-portrait-of-a-competent-woman-free-photo.jpg"
+              }
+            />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
