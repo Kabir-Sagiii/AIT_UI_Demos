@@ -1,0 +1,77 @@
+.product-banner {
+  width: 1100px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px black;
+  height: 470px;
+  /* background-image: url("https://images.squarespace-cdn.com/content/v1/5ae8bd2f89c1723a6f6f557b/1565794679412-QOSVO1NO2JF104SBAU4R/AdobeStock_237119664.jpeg"); */
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://images.squarespace-cdn.com/content/v1/5ae8bd2f89c1723a6f6f557b/1565794679412-QOSVO1NO2JF104SBAU4R/AdobeStock_237119664.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.product-banner h1,
+p {
+  color: white;
+  text-align: center;
+}
+.product-banner h1 {
+  font-size: 62px;
+  margin-bottom: 10px;
+}
+.product-banner p {
+  font-size: 19px;
+}
+.product-categories {
+  width: 1100px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.product-categories img {
+  border-radius: 50%;
+  box-shadow: 0 0 10px black;
+}
+.product-categories h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+.products-data {
+  width: 1100px;
+  margin: 30px auto;
+}
+.products-data .card {
+  width: 290px;
+  height: 370px;
+  box-shadow: 0 0 10px green;
+  text-align: center;
+  padding: 5px;
+}
+.products-data h3 {
+  margin-bottom: 11px;
+  margin-top: 12px;
+}
+.products-data .card p {
+  color: black;
+  margin-bottom: 15px;
+}
+.products-data button {
+  padding: 11px 20px;
+  margin-right: 5px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 20px 10px 0px 0px;
+}
+.products-data .card :nth-child(5) {
+  background-color: salmon;
+}
+.products-data .card :nth-child(6) {
+  background-color: green;
+}
