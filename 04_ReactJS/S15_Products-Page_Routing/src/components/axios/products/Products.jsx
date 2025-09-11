@@ -1,6 +1,15 @@
 import { useEffect, useState, useRef } from "react";
 import "./Products.css";
+import { getProducts, filterProducts } from "./Products";
+
 function Products() {
+  const [products, setProducts] = useState([]);
+  const [activeCategory, setActiveCategory] = useState("all");
+
+  useEffect(() => {
+    getProducts(setProducts);
+  }, []);
+
   const id = useRef();
   const [bgImage, setBgImage] = useState({
     image: "bgImage-1",
@@ -34,6 +43,7 @@ function Products() {
       clearInterval(id.current);
     };
   }, [bgImage]);
+
   return (
     <div>
       <section className={`product-banner ${bgImage.image}`}>
@@ -50,66 +60,108 @@ function Products() {
       </section>
 
       <section className="product-categories">
-        <div>
+        <div
+          onClick={() => {
+            setActiveCategory("all");
+            filterProducts(null, setProducts);
+          }}
+        >
           <img
+            className={activeCategory === "all" ? "active" : "inactive"}
             src="https://tse3.mm.bing.net/th/id/OIP.j9HypQr5EAEYMLgxv4GnNgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
             alt=""
             width={80}
             height={80}
           />
-          <h3>All</h3>
+          <h3 className={activeCategory === "all" ? "green" : "black"}>All</h3>
         </div>
 
-        <div>
+        <div
+          onClick={() => {
+            filterProducts("electronics", setProducts);
+            setActiveCategory("electronics");
+          }}
+        >
           <img
+            className={activeCategory === "electronics" ? "active" : "inactive"}
             src="https://c8.alamy.com/comp/2KP7X29/group-of-home-appliances-and-consumer-electronics-isolated-on-white-background-3d-illustration-2KP7X29.jpg"
             alt=""
             width={80}
             height={80}
           />
-          <h3>Electronics</h3>
+          <h3 className={activeCategory === "electronics" ? "green" : "black"}>
+            Electronics
+          </h3>
         </div>
 
-        <div>
+        <div
+          onClick={() => {
+            filterProducts("jewelery", setProducts);
+            setActiveCategory("jewelery");
+          }}
+        >
           <img
+            className={activeCategory === "jewelery" ? "active" : "inactive"}
             src="https://content3.jdmagicbox.com/comp/warangal/s2/9999px870.x870.180119113134.j6s2/catalogue/malabar-gold-and-diamonds-jewellery-balasamudram-warangal-jewellery-showrooms-6v13e.jpg"
             alt=""
             width={80}
             height={80}
           />
-          <h3>Jewelery</h3>
+          <h3 className={activeCategory === "jewelery" ? "green" : "black"}>
+            Jewelery
+          </h3>
         </div>
 
-        <div>
+        <div
+          onClick={() => {
+            filterProducts("men's clothing", setProducts);
+            setActiveCategory("mens");
+          }}
+        >
           <img
+            className={activeCategory === "mens" ? "active" : "inactive"}
             src="https://tse4.mm.bing.net/th/id/OIP.fYTx_N6ZP0qkC67zBoPrIQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
             alt=""
             width={80}
             height={80}
           />
-          <h3>Men's</h3>
+          <h3 className={activeCategory === "mens" ? "green" : "black"}>
+            Men's
+          </h3>
         </div>
 
-        <div>
+        <div
+          onClick={() => {
+            filterProducts("women's clothing", setProducts);
+            setActiveCategory("womens");
+          }}
+        >
           <img
+            className={activeCategory === "womens" ? "active" : "inactive"}
             src="https://st4.depositphotos.com/2939989/22379/i/1600/depositphotos_223799554-stock-photo-womens-clothes-set-isolated-female.jpg"
             alt=""
             width={80}
             height={80}
           />
-          <h3>Women's</h3>
+          <h3 className={activeCategory === "womens" ? "green" : "black"}>
+            Women's
+          </h3>
         </div>
       </section>
 
       <section className="products-data">
-        <div className="card">
-          <img src="" alt="" width={"100%"} height={200} />
-          <h3>Product Name</h3>
-          <p>$ 50</p>
-          <h4>Category Name</h4>
-          <button>Product Details</button>
-          <button>Add-To-Cart</button>
-        </div>
+        {products.map((product) => {
+          return (
+            <div className="card">
+              <img src={product.image} alt="" width={"100%"} height={200} />
+              <h4 style={{ color: "green" }}>{product.title}</h4>
+              <p>$ {product.price}</p>
+              <h4>{product.category}</h4>
+              <button>Product Details</button>
+              <button>Add-To-Cart</button>
+            </div>
+          );
+        })}
       </section>
     </div>
   );

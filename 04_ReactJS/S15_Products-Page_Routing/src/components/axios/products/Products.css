@@ -50,8 +50,8 @@ p {
 }
 .product-categories img {
   border-radius: 50%;
-  box-shadow: 0 0 10px black;
 }
+
 .product-categories h3 {
   text-align: center;
   margin-top: 10px;
@@ -59,15 +59,19 @@ p {
 .products-data {
   width: 1100px;
   margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
 }
 .products-data .card {
-  width: 290px;
-  height: 370px;
-  box-shadow: 0 0 10px green;
+  width: 310px;
+
+  box-shadow: 0 0 10px red;
   text-align: center;
-  padding: 5px;
+  padding: 10px;
 }
-.products-data h3 {
+.products-data h4 {
   margin-bottom: 11px;
   margin-top: 12px;
 }
@@ -89,4 +93,18 @@ p {
 }
 .products-data .card :nth-child(6) {
   background-color: green;
+}
+
+.inactive {
+  box-shadow: 0 0 10px black;
+}
+.active {
+  box-shadow: 0 0 10px red;
+  border: 2px solid red;
+}
+.green {
+  color: red;
+}
+.black {
+  color: black;
 }
