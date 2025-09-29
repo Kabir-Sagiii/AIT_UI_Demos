@@ -55,7 +55,7 @@ function App() {
     <div>
       <loginContext.Provider value={{ isLoggedIn, login, logout }}>
         {isLoggedIn ? <Nav /> : null}
-        <Container />
+       cd..
       </loginContext.Provider>
     </div>
   );

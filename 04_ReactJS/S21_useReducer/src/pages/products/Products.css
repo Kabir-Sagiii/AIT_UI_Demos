@@ -1,0 +1,110 @@
+.bgImage-1 {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://img.freepik.com/premium-photo/flat-lay-various-electronics-blue-background_14117-648287.jpg");
+}
+.bgImage-2 {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://i.pinimg.com/originals/96/53/f6/9653f6102b68c96dd8f59808b3ceed9d.jpg");
+}
+.bgImage-3 {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://wallpaperaccess.com/full/1448061.jpg");
+}
+.bgImage-4 {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://wallpapercave.com/wp/wp6130531.jpg");
+}
+
+.product-banner {
+  width: 1100px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px black;
+  height: 470px;
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.product-banner h1,
+p {
+  color: white;
+  text-align: center;
+}
+.product-banner h1 {
+  font-size: 62px;
+  margin-bottom: 10px;
+}
+.product-banner p {
+  font-size: 19px;
+}
+.product-categories {
+  width: 1100px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.product-categories img {
+  border-radius: 50%;
+}
+
+.product-categories h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+.products-data {
+  width: 1100px;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.products-data .card {
+  width: 310px;
+
+  box-shadow: 0 0 10px red;
+  text-align: center;
+  padding: 10px;
+}
+.products-data h4 {
+  margin-bottom: 11px;
+  margin-top: 12px;
+}
+.products-data .card p {
+  color: black;
+  margin-bottom: 15px;
+}
+.products-data button {
+  padding: 11px 20px;
+  margin-right: 5px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 20px 10px 0px 0px;
+}
+.products-data .card :nth-child(5) button {
+  background-color: salmon;
+}
+.products-data .card :nth-child(6) {
+  background-color: green;
+}
+
+.inactive {
+  box-shadow: 0 0 10px black;
+}
+.active {
+  box-shadow: 0 0 10px red;
+  border: 2px solid red;
+}
+.green {
+  color: red;
+}
+.black {
+  color: black;
+}
