@@ -9,6 +9,11 @@ Sign up API : POST
 http://localhost:5001/auth/sign-up
 
 
+get All products
+=================
+http://localhost:5001/products/all-products
+
+
 
 Add to Cart API : POST
 ================

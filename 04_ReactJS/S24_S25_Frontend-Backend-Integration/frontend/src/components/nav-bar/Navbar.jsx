@@ -17,7 +17,12 @@ function Navbar(props) {
         <Link to="/contact">ContactUs</Link>
       </div>
       <div id="icons">
-        <i style={{ fontSize: "21px" }} className="bi bi-bag-check"></i>
+        <Link to="/cart">
+          <i
+            style={{ fontSize: "21px", color: "white" }}
+            className="bi bi-bag-check"
+          ></i>
+        </Link>
         <i style={{ fontSize: "21px" }} className="bi bi-suit-heart-fill"></i>
 
         <button

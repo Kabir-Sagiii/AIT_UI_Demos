@@ -3,7 +3,7 @@ const Product = require("../model/productSchema");
 const { verifyToken } = require("../middleware/tokenVerification");
 const route = express.Router();
 
-route.get("/all-products", verifyToken, async (req, res) => {
+route.get("/all-products", async (req, res) => {
   try {
     const data = await Product.find();
 
